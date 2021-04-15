@@ -17,7 +17,7 @@ public class ProductRestController {
         this.repository = repository;
     }
 
-    @GetMapping("/customer/{customerId}")
+    @GetMapping("/user/{customerId}")
     public List<Product> getAllCustomerId(@PathVariable int customerId) {
         return repository.findByCustomerId(customerId);
     }
