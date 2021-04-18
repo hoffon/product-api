@@ -12,9 +12,9 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int product_id;
 
-    private int customerId;
+//    private int customerId;
     private String product_name;
-    private String unit;
+//    private String unit;
     private int price;
 
     public int getProduct_id() {
@@ -25,13 +25,13 @@ public class Product {
         this.product_id = product_id;
     }
 
-    public int getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(int customerId) {
-        this.customerId = customerId;
-    }
+//    public int getCustomerId() {
+//        return customerId;
+//    }
+//
+//    public void setCustomerId(int customerId) {
+//        this.customerId = customerId;
+//    }
 
     public String getProduct_name() {
         return product_name;
@@ -41,13 +41,13 @@ public class Product {
         this.product_name = product_name;
     }
 
-    public String getUnit() {
-        return unit;
-    }
+//    public String getUnit() {
+//        return unit;
+//    }
 
-    public void setUnit(String unit) {
-        this.unit = unit;
-    }
+//    public void setUnit(String unit) {
+//        this.unit = unit;
+//    }
 
     public int getPrice() {
         return price;
@@ -59,11 +59,9 @@ public class Product {
 
     @Override
     public String toString() {
-        return "product{" +
+        return "Product{" +
                 "product_id=" + product_id +
-                ", customerId=" + customerId +
                 ", product_name='" + product_name + '\'' +
-                ", unit='" + unit + '\'' +
                 ", price=" + price +
                 '}';
     }
